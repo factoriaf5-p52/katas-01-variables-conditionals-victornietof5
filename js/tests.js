@@ -25,7 +25,7 @@ describe('Comparaciones en Javascript', () => {
     it("usando ===", () => {
         const number = 20;
         //completa la asignación usando number y el comparador ===
-        const expresion = false
+        const expresion = number === 21
 
         expect(expresion).to.equal(false)
     })
@@ -33,7 +33,7 @@ describe('Comparaciones en Javascript', () => {
     it("usando !==", () => {
         const language = "Javascript";
         //completa la asignación usando language y el comparador !==
-        const expresion = false
+        const expresion = language !== "Javascript";
         expect(expresion).to.equal(false)
     })
 })
@@ -47,9 +47,9 @@ describe("Operaciones aritméticas", () => {
     })
     it("Usando multiplicación", () => {
         const a = 10;
-        const b = 13;
+        const b = 1.3;
 
-        expect(a*b).to.equal(130);
+        expect(a*b).to.equal(13);
     })
     it("Usando división", () => {
         const a = 10;
@@ -86,11 +86,10 @@ describe("Ejemplos de funciones", () => {
         expect(evenOrOdd(2)).to.equal("even")
         expect(evenOrOdd(13)).to.equal("odd")
     })
-
+    
     it ("Función que nos devuelve un saludo para cada nombre", () => {
         expect(greeting("Javi")).to.equal("Hola, Javi!")
         expect(greeting("gente")).to.equal("Hola, gente!")
         expect(greeting("Mary")).to.equal("Hola, Mary!")
     })
 })
-
